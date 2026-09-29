@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Nuvores Toys | Book a Consultation</title>
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-mark">N</span>
+      <span>Nuvores Toys</span>
+    </div>
+
+    <span class="header-label">Production Consultation</span>
+  </header>
+
+  <main>
+    <section class="booking-intro">
+      <p class="eyebrow">CONSULTATION BOOKING</p>
+
+      <h1>Let's plan your next toy project.</h1>
+
+      <p class="intro">
+        Book a consultation with Nuvores Toys to discuss bulk orders,
+        custom toy requirements, or product planning.
+      </p>
+    </section>
+
+    <section class="booking-layout">
+
+      <!-- Consultation -->
+      <div class="booking-section">
+        <div class="section-heading">
+          <span>01</span>
+          <div>
+            <h2>Choose a consultation</h2>
+            <p>Select the type of discussion you need.</p>
+          </div>
+        </div>
+
+        <div class="consultation-options">
+
+          <button class="consultation-card" data-consultation="Bulk Order Consultation">
+            <strong>Bulk Order</strong>
+            <span>Discuss quantities, requirements and production planning.</span>
+          </button>
+
+          <button class="consultation-card" data-consultation="Custom Toy Consultation">
+            <strong>Custom Toy</strong>
+            <span>Discuss custom toy concepts, specifications and production.</span>
+          </button>
+
+          <button class="consultation-card" data-consultation="Product Planning Consultation">
+            <strong>Product Planning</strong>
+            <span>Explore an upcoming product idea or collection.</span>
+          </button>
+
+        </div>
+      </div>
+
+      <!-- Date -->
+      <div class="booking-section">
+        <div class="section-heading">
+          <span>02</span>
+          <div>
+            <h2>Select a date</h2>
+            <p>Choose a date for your consultation.</p>
+          </div>
+        </div>
+
+        <input
+          type="date"
+          id="bookingDate"
+          class="date-input"
+        >
+      </div>
+
+      <!-- Time -->
+      <div class="booking-section">
+        <div class="section-heading">
+          <span>03</span>
+          <div>
+            <h2>Available times</h2>
+            <p>Select an available consultation slot.</p>
+          </div>
+        </div>
+
+        <div id="timeSlots" class="time-slots">
+          <p class="empty-state">
+            Select a date to view available times.
+          </p>
+        </div>
+      </div>
+
+      <!-- Customer details -->
+      <div class="booking-section">
+        <div class="section-heading">
+          <span>04</span>
+          <div>
+            <h2>Your details</h2>
+            <p>Tell us about yourself and your project.</p>
+          </div>
+        </div>
+
+        <form id="bookingForm">
+
+          <div class="form-grid">
+
+            <label>
+              Full name
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your full name"
+                required
+              >
+            </label>
+
+            <label>
+              Email
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                required
+              >
+            </label>
+
+            <label>
+              Phone
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="+92..."
+                required
+              >
+            </label>
+
+            <label>
+              Organization
+              <input
+                type="text"
+                id="organization"
+                name="organization"
+                placeholder="School, retailer, company..."
+                required
+              >
+            </label>
+
+          </div>
+
+          <label>
+            Project requirements
+            <textarea
+              id="requirements"
+              name="requirements"
+              rows="5"
+              placeholder="Briefly describe what you would like to discuss..."
+              required
+            ></textarea>
+          </label>
+
+          <button type="submit" class="submit-button">
+            Confirm Consultation
+          </button>
+
+          <p id="formMessage" class="form-message"></p>
+
+        </form>
+      </div>
+
+    </section>
+  </main>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
